@@ -23,12 +23,12 @@ unsigned long RED;
 
 #define D 16761405 //right arrow
 // defines the codes for buttons 1-3 on the remote
-/*#define E [Code] //Low speed
+#define E [Code] //Low speed
 
 #define F [Code] // medium speed
 
 #define G [Code] // high speed
-*/
+
 IRrecv irrecv(receiverpin);
 decode_results results;
 
@@ -145,7 +145,7 @@ void loop()
    }
  
  // Adds speed options
- /* else if(RED==E)
+    else if(RED==E)
   { 
          _low();
    }
@@ -156,6 +156,6 @@ void loop()
    else if(RED==G)
   { 
          _high();
-   }*/
+   }
 }
 
